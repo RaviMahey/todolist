@@ -50,6 +50,7 @@ function deleteFromList(indexOfList,doneDel){
 	if(doneDel==0){
 
 		zerOneTwo= 1;
+		document.getElementById('taskAdded').className = temp;
 		document.getElementById('taskAdded').innerHTML="Task is Done";
 		document.getElementById('taskAdded').style.visibility="visible";
 		let t1=setTimeout(showAlert,2000);
@@ -91,7 +92,9 @@ function  addToList(){
 	// alert(allData);
 	localStorage.setItem('list',JSON.stringify(allData));
 	document.getElementById("inputText").value="";	
-	document.getElementById('taskAdded').innerHTML="task is Added";
+	document.getElementById('taskAdded').className = temp;
+
+	document.getElementById('taskAdded').innerHTML="Task is Added";
 	document.getElementById("taskAdded").style.visibility="visible";
 	zerOneTwo=0;
 	let timeOut=setTimeout(showAlert,2000);
