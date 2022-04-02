@@ -18,10 +18,12 @@
     </style>
   </head>
   <body onload="displayList()" style="">
-    <div class="container border p-5 my-4 bg-light custom" >      
-
+    <div class="container-fluid border  bg-light custom" >      
+      <div class="row rounded-0 p-1  alert alert-success" role="alert" style="visibility: hidden;" id="taskAdded" type="button" onclick="clicked()" >
+      task is added
+      </div>              
     
-      <div class="row">
+      <div class="row m-2">
         <form class="mb-3" method="post" name="mainForm" autocomplete="off" >
           <label class="form-label col" > <h1>Todo!</h1></label>
           <div class="row">
@@ -36,7 +38,7 @@
          
         </form>        
       </div>
-      <div class="row bg-white rounded" id="LIST">
+      <div class="row bg-white rounded m-2" id="LIST">
         
       </div>    
     </div>
