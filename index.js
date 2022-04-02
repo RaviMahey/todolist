@@ -2,7 +2,7 @@
 var allData= JSON.parse(localStorage.getItem('list') );
 document.body.style.zoom="100%";
 console.log(allData);
-let temp= "row rounded-0 p-1  alert alert-success";
+var temp= "row rounded-0 p-1  alert alert-success";
 var zerOneTwo=-1;
 function displayList(){
 	var inHtml="";
